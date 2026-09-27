@@ -2,3 +2,10 @@
 2026-09-26 · Fase 2: estructura del proyecto creada
 2026-09-27 00:05:30 · Fase 3 · FMI FSIC · HTTP 200 · 15249 filas · exploración de cobertura
 2026-09-27 00:05:30 · Fase 3 · Banco Mundial · 267 filas · indicadores FS.AST.PRVT.GD.ZS, FB.AST.NPER.ZS, GFDD.SI.02
+2026-09-27 00:18:47 · 01_extraccion_api · Inicio · ventana 2005-01-01 a 2025-12-31 (descarga desde 2004)
+2026-09-27 00:18:51 · 01_extraccion_api · FMI FSIC · HTTP 200 · 3560 filas · endpoint https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.STA/FSIC/~/PER+CHL+COL+MEX.S12CFSI.AQ12_CFSI_PT+FSI688_CFSI_PT+ROA_CFSI_PT.M+Q+A
+2026-09-27 00:18:53 · 01_extraccion_api · Banco Mundial FS.AST.PRVT.GD.ZS · HTTP 200 · 88 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/FS.AST.PRVT.GD.ZS?format=json&source=2&per_page=20000&date=2004%3A2025
+2026-09-27 00:18:54 · 01_extraccion_api · Banco Mundial GFDD.SI.02 · HTTP 200 · 72 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/GFDD.SI.02?format=json&source=32&per_page=20000&date=2004%3A2025
+2026-09-27 00:18:55 · 01_extraccion_api · Banco Mundial GFDD.SI.05 · HTTP 200 · 72 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/GFDD.SI.05?format=json&source=32&per_page=20000&date=2004%3A2025
+2026-09-27 00:18:57 · 01_extraccion_api · Banco Mundial GFDD.EI.05 · HTTP 200 · 72 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/GFDD.EI.05?format=json&source=32&per_page=20000&date=2004%3A2025
+2026-09-27 00:18:58 · 01_extraccion_api · Fin · 3734 filas guardadas en datos_crudos/datos_crudos_2024200500F.csv

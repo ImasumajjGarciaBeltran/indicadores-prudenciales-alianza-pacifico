@@ -1,0 +1,4914 @@
+{
+ "FS.AST.PRVT.GD.ZS": [
+  {
+   "page": 1,
+   "pages": 1,
+   "per_page": 20000,
+   "total": 88,
+   "sourceid": "2",
+   "lastupdated": "2026-07-13"
+  },
+  [
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2025",
+    "value": 102.08420900719,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2024",
+    "value": 104.567816282613,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2023",
+    "value": 109.505087480448,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2022",
+    "value": 112.669584808771,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2021",
+    "value": 109.258846092778,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2020",
+    "value": 123.532570614359,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2019",
+    "value": 123.238729784071,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2018",
+    "value": 116.098274611163,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2017",
+    "value": 111.859731058874,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2016",
+    "value": 109.658986217723,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2015",
+    "value": 108.683157928885,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2014",
+    "value": 107.29402770779,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2013",
+    "value": 104.149344550832,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2012",
+    "value": 104.266686517932,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2011",
+    "value": 101.863485350982,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2010",
+    "value": 99.4755906592451,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2009",
+    "value": 102.687075908392,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2008",
+    "value": 100.172568090545,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2007",
+    "value": 84.0752473162029,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2006",
+    "value": 78.1133233692663,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2005",
+    "value": 77.634565408211,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2004",
+    "value": 76.7499857822204,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2025",
+    "value": 39.8565281134651,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2024",
+    "value": 39.3740826684054,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2023",
+    "value": 41.5886837999716,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2022",
+    "value": 44.1883129591759,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2021",
+    "value": 47.9124060650503,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2020",
+    "value": 51.9987790610817,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2019",
+    "value": 46.0415781067709,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2018",
+    "value": 45.8707074728715,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2017",
+    "value": 49.8054213986162,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2016",
+    "value": 47.0541978052353,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2015",
+    "value": 46.9053935998568,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2014",
+    "value": 42.3846056970013,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2013",
+    "value": 39.4836916913459,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2012",
+    "value": 37.7448515262877,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2011",
+    "value": 34.9599738877776,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2010",
+    "value": 32.352958637797,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2009",
+    "value": 30.0588498093341,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2008",
+    "value": 31.3428821283831,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2007",
+    "value": 30.566568223407,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2006",
+    "value": 27.3293271996088,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2005",
+    "value": 22.7527186089507,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2004",
+    "value": 22.1991386566001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2025",
+    "value": 35.5021122487568,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2024",
+    "value": 35.0748199517549,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2023",
+    "value": 33.2256099210698,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2022",
+    "value": 34.2487696122269,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2021",
+    "value": 35.0570605465604,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2020",
+    "value": 36.9325897654775,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2019",
+    "value": 35.5851864842603,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2018",
+    "value": 33.6152178109833,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2017",
+    "value": 34.3431256738601,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2016",
+    "value": 32.9508423866166,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2015",
+    "value": 30.8304978690131,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2014",
+    "value": 28.1836821060935,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2013",
+    "value": 27.8590593255176,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2012",
+    "value": 24.9270563825252,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2011",
+    "value": 23.5848328387345,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2010",
+    "value": 22.3237750273616,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2009",
+    "value": 21.6119225665134,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2008",
+    "value": 19.7553753175775,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2007",
+    "value": 20.4394698066311,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2006",
+    "value": 18.3518916727969,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2005",
+    "value": 15.3135908147147,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2004",
+    "value": 14.1054932641584,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2025",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2024",
+    "value": 39.6187196270943,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2023",
+    "value": 42.9491111931795,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2022",
+    "value": 45.6488442298176,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2021",
+    "value": 47.1153342938622,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2020",
+    "value": 55.3124099083207,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2019",
+    "value": 44.7242368945336,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2018",
+    "value": 43.9039424432995,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2017",
+    "value": 42.4146143080756,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2016",
+    "value": 42.8090253456419,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2015",
+    "value": 43.8679314540478,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2014",
+    "value": 40.8996268175973,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2013",
+    "value": 37.7199291764532,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2012",
+    "value": 34.0437468209084,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2011",
+    "value": 32.3092275000503,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2010",
+    "value": 30.261687153432,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2009",
+    "value": 30.0145290325562,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2008",
+    "value": 29.7639607500021,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2007",
+    "value": 24.6070736917389,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2006",
+    "value": 20.8131640208248,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2005",
+    "value": 19.066421608863,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FS.AST.PRVT.GD.ZS",
+     "value": "Domestic credit to private sector (% of GDP)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2004",
+    "value": 17.9102399219746,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   }
+  ]
+ ],
+ "GFDD.SI.02": [
+  {
+   "page": 1,
+   "pages": 1,
+   "per_page": 20000,
+   "total": 72,
+   "sourceid": "32",
+   "lastupdated": "2022-09-23"
+  },
+  [
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2020",
+    "value": 1.5529892,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2019",
+    "value": 2.0550492,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2018",
+    "value": 1.8720146,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2017",
+    "value": 1.9163625,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2016",
+    "value": 1.8326362,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2015",
+    "value": 1.8746633,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2014",
+    "value": 2.0596653,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2013",
+    "value": 2.1054329,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2012",
+    "value": 2.1571518,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2011",
+    "value": 2.3464556,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2010",
+    "value": 2.6932803,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2009",
+    "value": 2.9000001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2008",
+    "value": 1,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2007",
+    "value": 0.80000001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2006",
+    "value": 0.69999999,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2005",
+    "value": 0.89999998,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2004",
+    "value": 1.2,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2020",
+    "value": 4.8022308,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2019",
+    "value": 4.1744055,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2018",
+    "value": 4.4003755,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2017",
+    "value": 4.1797815,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2016",
+    "value": 3.1245365,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2015",
+    "value": 2.8476728,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2014",
+    "value": 2.9152608,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2013",
+    "value": 2.7719927,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2012",
+    "value": 2.7584413,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2011",
+    "value": 2.4955438,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2010",
+    "value": 2.8633766,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2009",
+    "value": 4,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2008",
+    "value": 3.9000001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2007",
+    "value": 3.2,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2006",
+    "value": 2.7,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2005",
+    "value": 2.7,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2004",
+    "value": 3.3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2020",
+    "value": 2.4291992,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2019",
+    "value": 2.0904559,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2018",
+    "value": 2.050854,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2017",
+    "value": 2.0898729,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2016",
+    "value": 2.0874783,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2015",
+    "value": 2.5232119,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2014",
+    "value": 3.0367384,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2013",
+    "value": 3.2431985,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2012",
+    "value": 2.444161,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2011",
+    "value": 2.1157234,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2010",
+    "value": 2.0432868,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2009",
+    "value": 2.8,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2008",
+    "value": 3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2007",
+    "value": 2.3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2006",
+    "value": 1.8,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2005",
+    "value": 1.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2004",
+    "value": 2.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2020",
+    "value": 4.1276086,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2019",
+    "value": 3.3659945,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2018",
+    "value": 3.2710496,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2017",
+    "value": 4.6950252,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2016",
+    "value": 4.2923165,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2015",
+    "value": 3.9254859,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2014",
+    "value": 3.953459,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2013",
+    "value": 3.5029433,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2012",
+    "value": 3.2333209,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2011",
+    "value": 2.8927506,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2010",
+    "value": 3.027006,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2009",
+    "value": 2.7,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2008",
+    "value": 2.2,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2007",
+    "value": 2.7,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2006",
+    "value": 4.0999999,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2005",
+    "value": 6.3000002,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.02",
+     "value": "Bank non-performing loans to gross loans (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2004",
+    "value": 9.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   }
+  ]
+ ],
+ "GFDD.SI.05": [
+  {
+   "page": 1,
+   "pages": 1,
+   "per_page": 20000,
+   "total": 72,
+   "sourceid": "32",
+   "lastupdated": "2022-09-23"
+  },
+  [
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2020",
+    "value": 14.668479,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2019",
+    "value": 12.836554,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2018",
+    "value": 13.320456,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2017",
+    "value": 13.764409,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2016",
+    "value": 13.779784,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2015",
+    "value": 12.620351,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2014",
+    "value": 13.38505,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2013",
+    "value": 13.324354,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2012",
+    "value": 13.312122,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2011",
+    "value": 13.93459,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2010",
+    "value": 14.138363,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2009",
+    "value": 14.3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2008",
+    "value": 12.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2007",
+    "value": 12.2,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2006",
+    "value": 12.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2005",
+    "value": 13,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2004",
+    "value": 13.6,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2020",
+    "value": 19.93877,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2019",
+    "value": 16.915501,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2018",
+    "value": 18.5453,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2017",
+    "value": 18.631246,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2016",
+    "value": 17.51517,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2015",
+    "value": 16.874553,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2014",
+    "value": 16.998433,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2013",
+    "value": 16.963358,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2012",
+    "value": 18.080023,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2011",
+    "value": 16.878137,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2010",
+    "value": 17.338535,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2009",
+    "value": 17.200001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2008",
+    "value": 15.4,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2007",
+    "value": 16,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2006",
+    "value": 15.4,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2005",
+    "value": 17.1,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2004",
+    "value": 14.2,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2020",
+    "value": 17.697546,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2019",
+    "value": 15.982543,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2018",
+    "value": 15.905768,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2017",
+    "value": 15.57299,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2016",
+    "value": 14.898867,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2015",
+    "value": 14.960438,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2014",
+    "value": 15.754597,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2013",
+    "value": 15.598732,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2012",
+    "value": 15.947503,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2011",
+    "value": 15.669791,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2010",
+    "value": 16.861061,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2009",
+    "value": 16.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2008",
+    "value": 15.3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2007",
+    "value": 15.9,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2006",
+    "value": 16.1,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2005",
+    "value": 14.3,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2004",
+    "value": 14.1,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2021",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2020",
+    "value": 15.588818,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2019",
+    "value": 14.691528,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2018",
+    "value": 14.748126,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2017",
+    "value": 15.21678,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2016",
+    "value": 15.076137,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2015",
+    "value": 14.323597,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2014",
+    "value": 14.239808,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2013",
+    "value": 13.943049,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2012",
+    "value": 14.395261,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2011",
+    "value": 13.67179,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2010",
+    "value": 13.962065,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2009",
+    "value": 13.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2008",
+    "value": 11.9,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2007",
+    "value": 11.7,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2006",
+    "value": 12.5,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2005",
+    "value": 12,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.SI.05",
+     "value": "Bank regulatory capital to risk-weighted assets (%)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2004",
+    "value": 14,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   }
+  ]
+ ],
+ "GFDD.EI.05": [
+  {
+   "page": 1,
+   "pages": 1,
+   "per_page": 20000,
+   "total": 72,
+   "sourceid": "32",
+   "lastupdated": "2022-09-23"
+  },
+  [
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2021",
+    "value": 1.048616,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2020",
+    "value": 0.4178361,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2019",
+    "value": 0.9806011,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2018",
+    "value": 0.9691039,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2017",
+    "value": 1.077961,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2016",
+    "value": 0.9945338,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2015",
+    "value": 1.06878,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2014",
+    "value": 1.380553,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2013",
+    "value": 1.296143,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2012",
+    "value": 1.271554,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2011",
+    "value": 1.332848,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2010",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2009",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2008",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2007",
+    "value": 2.020751,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2006",
+    "value": 1.594254,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2005",
+    "value": 1.799541,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CL",
+     "value": "Chile"
+    },
+    "countryiso3code": "CHL",
+    "date": "2004",
+    "value": 1.633694,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2021",
+    "value": 0.4450516,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2020",
+    "value": 0.6004391,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2019",
+    "value": 1.734717,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2018",
+    "value": 1.677934,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2017",
+    "value": 1.486739,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2016",
+    "value": 2.559768,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2015",
+    "value": 1.8603,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2014",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2013",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2012",
+    "value": 1.788217,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2011",
+    "value": 2.093833,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2010",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2009",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2008",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2007",
+    "value": null,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2006",
+    "value": 1.923029,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2005",
+    "value": 2.015843,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "CO",
+     "value": "Colombia"
+    },
+    "countryiso3code": "COL",
+    "date": "2004",
+    "value": 2.561055,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2021",
+    "value": 1.609894,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2020",
+    "value": 0.9839224,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2019",
+    "value": 1.730321,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2018",
+    "value": 1.713173,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2017",
+    "value": 1.61245,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2016",
+    "value": 1.169837,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2015",
+    "value": 1.217535,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2014",
+    "value": 0.63842,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2013",
+    "value": 0.5546613,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2012",
+    "value": 0.7286398,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2011",
+    "value": 0.6494421,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2010",
+    "value": 0.6298082,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2009",
+    "value": 0.6364552,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2008",
+    "value": 0.5928518,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2007",
+    "value": 0.5346789,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2006",
+    "value": 1.717621,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2005",
+    "value": 0.205423,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "MX",
+     "value": "Mexico"
+    },
+    "countryiso3code": "MEX",
+    "date": "2004",
+    "value": 1.247054,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2021",
+    "value": 1.316065,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2020",
+    "value": 0.4298581,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2019",
+    "value": 2.237627,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2018",
+    "value": 2.043377,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2017",
+    "value": 1.932629,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2016",
+    "value": 1.970775,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2015",
+    "value": 2.033938,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2014",
+    "value": 1.937021,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2013",
+    "value": 2.010917,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2012",
+    "value": 2.322194,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2011",
+    "value": 2.625617,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2010",
+    "value": 2.391387,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2009",
+    "value": 2.360054,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2008",
+    "value": 2.715081,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2007",
+    "value": 2.65362,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2006",
+    "value": 2.451913,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2005",
+    "value": 2.505795,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "GFDD.EI.05",
+     "value": "Bank return on assets (%, after tax)"
+    },
+    "country": {
+     "id": "PE",
+     "value": "Peru"
+    },
+    "countryiso3code": "PER",
+    "date": "2004",
+    "value": 1.563026,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   }
+  ]
+ ]
+}
