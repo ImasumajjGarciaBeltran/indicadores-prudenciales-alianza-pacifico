@@ -26,3 +26,5 @@
 2026-09-27 01:44:44 · 03_limpieza_datos · README.md: hash SHA-256 actualizado
 2026-09-27 01:50:07 · 04_analisis · Inicio · 1008 observaciones · 4 países · 252 meses
 2026-09-27 01:50:25 · 04_analisis · Salidas de regresión (.txt), tablas 1-8 (.csv y .tex) y figuras 1-6 (.png, 300 dpi) guardadas en salidas/
+2026-09-27 02:34:12 · 04_analisis · Inicio · 1008 observaciones · 4 países · 252 meses
+2026-09-27 02:34:39 · 04_analisis · Salidas de regresión (.txt), tablas 1-9 (.csv y .tex) y figuras 1-7 (.png, 300 dpi) guardadas en salidas/

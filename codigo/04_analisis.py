@@ -22,6 +22,8 @@ Todo se calcula con numpy/scipy (fórmulas matriciales visibles), sin cajas negr
     autocorrelación y dependencia entre países)
   - Pruebas: F de efectos fijos, VIF, Breusch-Pagan, Pesaran CD, AR(1), Jarque-Bera
   - Robustez: modelo en niveles; X rezagadas 12 meses; winsorizado; sin Perú; solo meses observados
+  - Por país: una regresión log-log para cada país (errores Newey-West) y prueba F de
+    homogeneidad de pendientes (¿el efecto es el mismo en los 4 países?)
 """
 
 from datetime import datetime
@@ -190,6 +192,33 @@ def salida_regresion(m, titulo, errores="clasico"):
     texto = "\n".join(lineas)
     tabla = pd.concat([coef.round(6), pd.DataFrame({"Coeficiente": resumen.round(6)})])
     return texto, tabla
+
+
+def por_pais(df, y=None, xs=None):
+    """Regresión log-log de cada país por separado (MCO con errores Newey-West).
+    Newey-West es el equivalente de Driscoll-Kraay cuando hay una sola serie de tiempo."""
+    y, xs = y or Y, xs or XS
+    resultados, ssr_total, n_total = {}, 0.0, 0
+    for pais, g in df.groupby("pais"):
+        g = g.sort_values("t")
+        X = np.column_stack([np.ones(len(g)), g[xs].to_numpy()])
+        b, e, XtX_inv = ols(g[y].to_numpy(), X)
+        T, k = len(g), X.shape[1]
+        L = int(np.floor(4 * (T / 100) ** (2 / 9)))
+        u = X * e[:, None]
+        S = u.T @ u
+        for l in range(1, L + 1):
+            G = u[l:].T @ u[:-l]
+            S += (1 - l / (L + 1)) * (G + G.T)
+        se = np.sqrt(np.diag(XtX_inv @ S @ XtX_inv))
+        t = b / se
+        p = 2 * stats.t.sf(np.abs(t), df=T - k)
+        sst = ((g[y] - g[y].mean()) ** 2).sum()
+        resultados[pais] = {"coef": pd.Series(b, index=["constante"] + xs), "se": pd.Series(se, index=["constante"] + xs),
+                            "p": pd.Series(p, index=["constante"] + xs), "r2": 1 - (e @ e) / sst, "n": T}
+        ssr_total += e @ e
+        n_total += T
+    return resultados, ssr_total, n_total
 
 
 def estrellas(p):
@@ -473,8 +502,58 @@ def main():
                        for nombre, m in modelos.items()}, index=["X1 CAPR", "X2 ROA", "X3 CRED", "Observaciones"])
     guardar_tabla(t8, "tabla8_robustez", "Pruebas de robustez (efectos fijos, errores Driscoll-Kraay)")
 
+    # Tabla 9: modelo por país (cada país con su propia regresión log-log)
+    paises_res, ssr_sep, n_sep = por_pais(df)
+    filas = {}
+    for pais, r in paises_res.items():
+        fila = {x: f"{r['coef'][x]:.4f}{estrellas(r['p'][x])} ({r['se'][x]:.4f})" for x in XS}
+        fila["R2"] = f"{r['r2']:.4f}"
+        fila["Observaciones"] = r["n"]
+        filas[pais] = fila
+    t9 = pd.DataFrame(filas)
+    t9.index = ["X1 Log_CAPR", "X2 Log_ROA", "X3 Log_CRED", "R2", "Observaciones"]
+    guardar_tabla(t9, "tabla9_modelos_por_pais",
+                  "Regresión log-log por país (MCO, errores Newey-West entre paréntesis; *** p<0,01, ** p<0,05, * p<0,10)")
+
+    # Tabla 9b: por país con X rezagadas 12 meses (efecto del crédito con retraso)
+    paises_rez, _, _ = por_pais(rez)
+    filas = {pais: {x: f"{r['coef'][x]:.4f}{estrellas(r['p'][x])}" for x in XS} for pais, r in paises_rez.items()}
+    t9b = pd.DataFrame(filas)
+    t9b.index = ["X1 Log_CAPR (t-12)", "X2 Log_ROA (t-12)", "X3 Log_CRED (t-12)"]
+    guardar_tabla(t9b, "tabla9b_por_pais_rezago12", "Regresión log-log por país con X rezagadas 12 meses")
+
+    # Prueba de homogeneidad de pendientes (tipo Chow): ¿el efecto es igual en los 4 países?
+    k, N = len(XS), df["pais"].nunique()
+    F_hom = ((fe["ssr"] - ssr_sep) / (k * (N - 1))) / (ssr_sep / (n_sep - N * (k + 1)))
+    p_hom = stats.f.sf(F_hom, k * (N - 1), n_sep - N * (k + 1))
+    t9c = pd.DataFrame({"estadistico_F": [round(F_hom, 4)], "gl": [f"({k * (N - 1)}, {n_sep - N * (k + 1)})"],
+                        "valor_p": [round(p_hom, 6)],
+                        "conclusion": ["Los efectos difieren entre países" if p_hom < ALFA
+                                       else "No se rechaza que los efectos sean iguales"]},
+                       index=["Homogeneidad de pendientes"])
+    guardar_tabla(t9c, "tabla9c_homogeneidad", "Prueba F de homogeneidad de pendientes entre países")
+
+    # Figura 7: coeficientes por país con intervalo de confianza al 95 %
+    fig, ejes = plt.subplots(1, 3, figsize=(14, 4.3))
+    for eje, x in zip(ejes, XS):
+        paises = list(paises_res)
+        b = [paises_res[p]["coef"][x] for p in paises]
+        ic = [1.96 * paises_res[p]["se"][x] for p in paises]
+        eje.errorbar(range(len(paises)), b, yerr=ic, fmt="none", ecolor="black", capsize=6, lw=1.5, zorder=2)
+        eje.scatter(range(len(paises)), b, s=160, c=[COLORES[p] for p in paises], edgecolor="black", zorder=3)
+        eje.axhline(0, color="grey", ls="--", lw=1)
+        eje.axhline(fe["coef"][x], color="black", ls=":", lw=1.5, label=f"Panel EF = {fe['coef'][x]:.3f}")
+        eje.set_xticks(range(len(paises)), paises)
+        eje.set_title(ETIQUETAS[x], fontweight="bold", fontsize=10)
+        eje.legend(fontsize=8)
+        eje.grid(alpha=0.3, axis="y")
+    fig.suptitle("Figura 7. Elasticidades por país (IC 95 %, errores Newey-West)", fontweight="bold")
+    fig.tight_layout(rect=(0, 0, 1, 0.92))
+    fig.savefig(SALIDAS / "figura7_coeficientes_por_pais.png", dpi=300)
+    plt.close(fig)
+
     figuras(df, fe["resid"])
-    registrar("Salidas de regresión (.txt), tablas 1-8 (.csv y .tex) y figuras 1-6 (.png, 300 dpi) guardadas en salidas/")
+    registrar("Salidas de regresión (.txt), tablas 1-9 (.csv y .tex) y figuras 1-7 (.png, 300 dpi) guardadas en salidas/")
 
     print("\n" + txt_mco)
     print("\n" + txt_fe)
@@ -489,6 +568,12 @@ def main():
     print(t7b.to_string())
     print("\n=== Robustez ===")
     print(t8.to_string())
+    print("\n=== Modelo por país (MCO log-log, errores Newey-West) ===")
+    print(t9.to_string())
+    print("\n=== Por país con X rezagadas 12 meses ===")
+    print(t9b.to_string())
+    print("\n=== Homogeneidad de pendientes ===")
+    print(t9c.to_string())
 
 
 if __name__ == "__main__":
