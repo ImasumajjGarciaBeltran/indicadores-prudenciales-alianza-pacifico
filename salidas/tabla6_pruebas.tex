@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Pruebas de diagnóstico del modelo de efectos fijos}
+\begin{tabular}{llll}
+\hline
+ & estadistico & valor\_p & conclusion \\
+\hline
+F de efectos fijos & 152.6703 & 0.0000 & Se prefieren efectos fijos \\
+Breusch-Pagan & 106.5825 & 0.0000 & Hay heterocedasticidad \\
+Pesaran CD & -1.4886 & 0.1366 & Sin dependencia entre países \\
+rho AR(1) & 0.9774 & nan & Autocorrelación AR(1) de residuos (Durbin-Watson ≈ 0.045) \\
+Jarque-Bera & 677.0593 & 0.0000 & Residuos no normales (con n grande, la inferencia sigue siendo válida) \\
+\hline
+\end{tabular}
+\label{tab:tabla6_pruebas}
+\end{table}

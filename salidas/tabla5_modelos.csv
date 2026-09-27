@@ -1,0 +1,8 @@
+,MCO_agrupado,Efectos_fijos
+CAPR,0.0816*** (0.0279),0.0581*** (0.0224)
+ROA,0.0422 (0.0757),-0.3202*** (0.0648)
+CRED,-0.0104*** (0.0020),-0.0028 (0.0066)
+R2,0.2297,0.0765 (within)
+Observaciones,1008,1008
+Paises,4,4
+Error estándar,Driscoll-Kraay,Driscoll-Kraay
