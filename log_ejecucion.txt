@@ -9,3 +9,9 @@
 2026-09-27 00:18:55 · 01_extraccion_api · Banco Mundial GFDD.SI.05 · HTTP 200 · 72 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/GFDD.SI.05?format=json&source=32&per_page=20000&date=2004%3A2025
 2026-09-27 00:18:57 · 01_extraccion_api · Banco Mundial GFDD.EI.05 · HTTP 200 · 72 filas · endpoint https://api.worldbank.org/v2/country/PER;CHL;COL;MEX/indicator/GFDD.EI.05?format=json&source=32&per_page=20000&date=2004%3A2025
 2026-09-27 00:18:58 · 01_extraccion_api · Fin · 3734 filas guardadas en datos_crudos/datos_crudos_2024200500F.csv
+2026-09-27 00:43:28 · 03_limpieza_datos · Inicio · entrada datos_crudos/datos_crudos_2024200500F.csv
+2026-09-27 00:43:29 · 03_limpieza_datos · Factores de empalme Perú (FMI/GFDD): MOR=0.7733, CAPR=1.0000, ROA=1.3184
+2026-09-27 00:43:29 · 03_limpieza_datos · CRED PER 2025: imputado con la media de 3 años (2022-2024) = 42.7389
+2026-09-27 00:43:29 · 03_limpieza_datos · Fin · 1008 filas × 12 columnas · SHA-256 465aa3111a512be13cb30a5028b9bcf81ff2938e584f8f8d4c6dd78d6378dc2e
+2026-09-27 00:43:30 · 03_limpieza_datos · diccionario_variables.xlsx actualizado
+2026-09-27 00:43:30 · 03_limpieza_datos · README.md: hash SHA-256 actualizado

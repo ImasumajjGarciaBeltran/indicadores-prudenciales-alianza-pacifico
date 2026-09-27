@@ -34,4 +34,4 @@ _FECHA_INICIO y FECHA_CORTE se completan en la Fase 3._
 Ver `requirements.txt`.
 
 ## Hash SHA-256 de datos_procesados_2024200500F.csv
-_Se completa en la Fase 6._
+`465aa3111a512be13cb30a5028b9bcf81ff2938e584f8f8d4c6dd78d6378dc2e`  (1008 filas; generado el 2026-09-27 00:43)
