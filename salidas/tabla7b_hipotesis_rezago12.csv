@@ -1,0 +1,4 @@
+,variable,signo_esperado,coeficiente,error_DK,t,valor_p,decision
+H1 riesgo moral,Log_CAPR,-,0.2529,0.2018,1.253,0.211377,No significativa al 5%
+H2 mala gestión,Log_ROA,-,-0.1122,0.0542,-2.069,0.039666,Se acepta la hipótesis
+H3 auge crediticio,Log_CRED,+,0.1718,0.0556,3.091,0.002229,Se acepta la hipótesis

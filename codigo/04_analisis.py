@@ -6,20 +6,22 @@
 04_analisis.py  ·  Fase 7: estimaciones, tablas y figuras del artículo
 ----------------------------------------------------------------------
 Entrada : datos_procesados/datos_procesados_2024200500F.csv  (salida de 03_limpieza_datos.py)
-Salidas : carpeta salidas/  (tablas .csv y .tex, figuras .png)
+Salidas : carpeta salidas/  (tablas .csv y .tex, salidas de regresión .txt, figuras .png)
 
-Modelo (panel de 4 países × 252 meses, efectos fijos por país):
-    MOR_it = a_i + b1·CAPR_it + b2·ROA_it + b3·CRED_it + e_it
-    Y = MOR (morosidad) · X1 = CAPR (capital/APR) · X2 = ROA · X3 = CRED (crédito privado/PBI)
+Modelo principal (log-log, panel de 4 países × 252 meses, efectos fijos por país):
+    Log_MOR_it = a_i + b1·Log_CAPR_it + b2·Log_ROA_it + b3·Log_CRED_it + e_it
+    Y = Log_MOR (morosidad) · X1 = Log_CAPR (capital/APR) · X2 = Log_ROA · X3 = Log_CRED (crédito/PBI)
+    Los coeficientes son ELASTICIDADES: si X sube 1 %, Y cambia b %.
 
 Hipótesis:  H1: b1 < 0 (riesgo moral) · H2: b2 < 0 (mala gestión) · H3: b3 > 0 (auge crediticio)
 
 Todo se calcula con numpy/scipy (fórmulas matriciales visibles), sin cajas negras:
-  - MCO agrupado y Efectos Fijos (transformación within)
-  - Errores estándar de Driscoll-Kraay: robustos a heterocedasticidad, autocorrelación
-    (la interpolación la genera) y dependencia entre países.
-  - Pruebas: F de efectos fijos, VIF, Breusch-Pagan, Pesaran CD, autocorrelación AR(1)
-  - Robustez: X rezagadas 12 meses; solo Chile-Colombia-México; solo meses observados
+  - MCO agrupado (como "regress" de Stata) y Efectos Fijos (transformación within)
+  - Tabla ANOVA: SC, gl, CM, F, Prob > F, R², R² ajustado, Root MSE
+  - Errores estándar clásicos y de Driscoll-Kraay (robustos a heterocedasticidad,
+    autocorrelación y dependencia entre países)
+  - Pruebas: F de efectos fijos, VIF, Breusch-Pagan, Pesaran CD, AR(1), Jarque-Bera
+  - Robustez: modelo en niveles; X rezagadas 12 meses; winsorizado; sin Perú; solo meses observados
 """
 
 from datetime import datetime
@@ -37,16 +39,21 @@ CODIGO = "2024200500F"
 ENTRADA = Path(f"datos_procesados/datos_procesados_{CODIGO}.csv")
 SALIDAS = Path("salidas")
 ARCHIVO_LOG = Path("log_ejecucion.txt")
-Y = "MOR"
-XS = ["CAPR", "ROA", "CRED"]
+Y = "Log_MOR"                                   # modelo principal: log-log
+XS = ["Log_CAPR", "Log_ROA", "Log_CRED"]
+Y_NIV, XS_NIV = "MOR", ["CAPR", "ROA", "CRED"]  # modelo en niveles (robustez y figuras)
 ETIQUETAS = {
     "MOR": "Y: Morosidad (%)",
     "CAPR": "X1: Capital regulatorio / APR (%)",
     "ROA": "X2: Rentabilidad sobre activos, ROA (%)",
     "CRED": "X3: Crédito privado / PBI (%)",
+    "Log_MOR": "Y: Log de la morosidad",
+    "Log_CAPR": "X1: Log del capital regulatorio / APR",
+    "Log_ROA": "X2: Log del ROA",
+    "Log_CRED": "X3: Log del crédito privado / PBI",
 }
-SIGNO_ESPERADO = {"CAPR": -1, "ROA": -1, "CRED": +1}
-HIPOTESIS = {"CAPR": "H1 riesgo moral", "ROA": "H2 mala gestión", "CRED": "H3 auge crediticio"}
+SIGNO_ESPERADO = {x: s for x, s in zip(XS + XS_NIV, [-1, -1, +1] * 2)}
+HIPOTESIS = {x: h for x, h in zip(XS + XS_NIV, ["H1 riesgo moral", "H2 mala gestión", "H3 auge crediticio"] * 2)}
 COLORES = {"Perú": "#D62728", "Chile": "#1F77B4", "Colombia": "#F2B701", "México": "#2CA02C"}
 MESES_ES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
             "Setiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -121,12 +128,68 @@ def estimar(df, y=Y, xs=XS, efectos_fijos=True):
     p_dk = 2 * stats.t.sf(np.abs(t_dk), df=T - 1)
     ssr = e @ e
     sst = ((yv - yv.mean()) ** 2).sum()
+    k_mod = k
+    gl_mod = k_mod
     return {
+        "yv": yv, "X": X, "sst": sst, "ssm": sst - ssr, "gl_mod": gl_mod, "sigma2": sigma2,
+        "p_clasico": pd.Series(2 * stats.t.sf(np.abs(b / np.sqrt(np.diag(V_clasica))), df=gl), index=nombres),
+        "t_clasico": pd.Series(b / np.sqrt(np.diag(V_clasica)), index=nombres),
+        "efectos_fijos": efectos_fijos, "y": y, "xs": xs,
         "coef": pd.Series(b, index=nombres), "se_clasico": pd.Series(np.sqrt(np.diag(V_clasica)), index=nombres),
         "se_dk": pd.Series(se_dk, index=nombres), "t_dk": pd.Series(t_dk, index=nombres),
         "p_dk": pd.Series(p_dk, index=nombres), "resid": e, "ssr": ssr, "r2": 1 - ssr / sst,
         "n": n, "N": N, "gl": gl, "rezagos_dk": L, "T": T,
     }
+
+
+def formato(v):
+    return f"{int(v)}" if float(v).is_integer() and abs(v) > 1 else f"{v:.4f}"
+
+
+def salida_regresion(m, titulo, errores="clasico"):
+    """Salida tipo Stata ('regress' / 'xtreg, fe'): tabla ANOVA + tabla de coeficientes."""
+    n, gl_r, gl_m = m["n"], m["gl"], m["gl_mod"]
+    ssm, ssr, sst = m["ssm"], m["ssr"], m["sst"]
+    F = (ssm / gl_m) / (ssr / gl_r)
+    pF = stats.f.sf(F, gl_m, gl_r)
+    r2 = m["r2"]
+    r2_aj = 1 - (1 - r2) * (gl_r + gl_m) / gl_r
+    rmse = np.sqrt(ssr / gl_r)
+    if errores == "dk":
+        se, t, p, glt = m["se_dk"], m["t_dk"], m["p_dk"], m["T"] - 1
+        nota_se = "Errores estándar de Driscoll-Kraay"
+    else:
+        se, t, p, glt = m["se_clasico"], m["t_clasico"], m["p_clasico"], gl_r
+        nota_se = "Errores estándar clásicos (MCO)"
+    tcrit = stats.t.ppf(0.975, glt)
+    coef = pd.DataFrame({"Coeficiente": m["coef"], "Error_est": se, "t": t, "P>|t|": p,
+                         "IC95_inf": m["coef"] - tcrit * se, "IC95_sup": m["coef"] + tcrit * se})
+    anova = pd.DataFrame({"SC": [ssm, ssr, sst], "gl": [gl_m, gl_r, gl_m + gl_r],
+                          "CM": [ssm / gl_m, ssr / gl_r, sst / (gl_m + gl_r)]},
+                         index=["Modelo", "Residual", "Total"])
+    resumen = pd.Series({"Observaciones": n, f"F({gl_m}, {gl_r})": F, "Prob > F": pF,
+                         "R-cuadrado" + (" (within)" if m["efectos_fijos"] else ""): r2,
+                         "R-cuadrado ajustado": r2_aj, "Root MSE": rmse})
+    lineas = [titulo, "=" * 78,
+              f"{'Fuente':<10}{'SC':>16}{'gl':>8}{'CM':>16}   {'':<22}",
+              "-" * 78]
+    etiquetas_res = list(resumen.items())
+    for i, (fuente, fila) in enumerate(anova.iterrows()):
+        izq = f"{fuente:<10}{fila.SC:>16.6f}{int(fila.gl):>8}{fila.CM:>16.6f}"
+        der = etiquetas_res[i] if i < len(etiquetas_res) else ("", "")
+        lineas.append(f"{izq}   {der[0]:<22} = {formato(der[1]):>10}" if der[0] else izq)
+    for nombre, valor in etiquetas_res[3:]:
+        lineas.append(f"{'':<50}   {nombre:<22} = {formato(valor):>10}")
+    lineas += ["-" * 78,
+               f"{m['y']:<12}{'Coef.':>11}{'Err. est.':>11}{'t':>9}{'P>|t|':>9}{'[IC 95 %]':>24}",
+               "-" * 78]
+    for var, f in coef.iterrows():
+        lineas.append(f"{var:<12}{f.Coeficiente:>11.6f}{f.Error_est:>11.6f}{f.t:>9.2f}{f['P>|t|']:>9.3f}"
+                      f"{f.IC95_inf:>12.6f}{f.IC95_sup:>12.6f}")
+    lineas += ["-" * 78, nota_se + (" · efectos fijos por país (a_i) incluidos" if m["efectos_fijos"] else "")]
+    texto = "\n".join(lineas)
+    tabla = pd.concat([coef.round(6), pd.DataFrame({"Coeficiente": resumen.round(6)})])
+    return texto, tabla
 
 
 def estrellas(p):
@@ -179,7 +242,7 @@ def figuras(df, residuos):
 
     # Figura 1: evolución de las 4 variables por país
     fig, ejes = plt.subplots(2, 2, figsize=(12, 7.5), sharex=True)
-    for eje, var in zip(ejes.flat, [Y] + XS):
+    for eje, var in zip(ejes.flat, [Y_NIV] + XS_NIV):
         for pais, g in df.groupby("pais"):
             eje.plot(g["fecha"], g[var], color=COLORES[pais], lw=1.8, label=pais)
         eje.set_title(ETIQUETAS[var], fontweight="bold")
@@ -194,25 +257,25 @@ def figuras(df, residuos):
 
     # Figura 2: dispersión Y contra cada X, puntos llamativos y recta de ajuste
     fig, ejes = plt.subplots(1, 3, figsize=(15, 4.8))
-    for eje, x in zip(ejes, XS):
+    for eje, x in zip(ejes, XS_NIV):
         for pais, g in df.groupby("pais"):
-            eje.scatter(g[x], g[Y], s=42, color=COLORES[pais], edgecolor="black", linewidth=0.6,
+            eje.scatter(g[x], g[Y_NIV], s=42, color=COLORES[pais], edgecolor="black", linewidth=0.6,
                         alpha=0.85, label=pais, zorder=3)
-        m, c = np.polyfit(df[x], df[Y], 1)
+        m, c = np.polyfit(df[x], df[Y_NIV], 1)
         xs = np.linspace(df[x].min(), df[x].max(), 100)
-        r, p = stats.pearsonr(df[x], df[Y])
+        r, p = stats.pearsonr(df[x], df[Y_NIV])
         eje.plot(xs, m * xs + c, color="black", lw=2.2, ls="--", zorder=4)
         eje.set_xlabel(ETIQUETAS[x], fontweight="bold")
-        eje.set_ylabel(ETIQUETAS[Y], fontweight="bold")
+        eje.set_ylabel(ETIQUETAS[Y_NIV], fontweight="bold")
         eje.set_title(f"r = {r:.3f}  (p = {p:.3g})", fontsize=10)
         eje.grid(alpha=0.3)
     ejes[0].legend(frameon=True, fontsize=8)
-    fig.suptitle("Figura 2. Correlación entre la morosidad (Y) y sus determinantes (X)", fontweight="bold")
+    fig.suptitle("Figura 2. Correlación entre la morosidad (Y) y sus determinantes (X), en niveles", fontweight="bold")
     fig.tight_layout(rect=(0, 0, 1, 0.93))
     fig.savefig(SALIDAS / "figura2_dispersion.png", dpi=300)
     plt.close(fig)
 
-    # Figuras 2a, 2b, 2c: cada diagrama de dispersión por separado (Y vs X1, Y vs X2, Y vs X3)
+    # Figuras 2a, 2b, 2c: dispersión de las variables DEL MODELO (en logaritmos), una por figura
     for letra, x in zip("abc", XS):
         fig, eje = plt.subplots(figsize=(7, 5.2))
         for pais, g in df.groupby("pais"):
@@ -225,7 +288,7 @@ def figuras(df, residuos):
                  label=f"Ajuste lineal: Y = {c:.3f} {m:+.3f}·X")
         eje.set_xlabel(ETIQUETAS[x], fontweight="bold")
         eje.set_ylabel(ETIQUETAS[Y], fontweight="bold")
-        eje.set_title(f"Figura 2{letra}. Dispersión entre Y y {ETIQUETAS[x].split(':')[0]}  (r = {r:.3f}; p = {p:.3g})",
+        eje.set_title(f"Figura 2{letra}. Dispersión entre Log_MOR (Y) y {x} ({ETIQUETAS[x].split(':')[0]})  (r = {r:.3f}; p = {p:.3g})",
                       fontweight="bold", fontsize=10)
         eje.grid(alpha=0.3)
         eje.legend(frameon=True, fontsize=8)
@@ -234,10 +297,10 @@ def figuras(df, residuos):
         plt.close(fig)
 
     # Figura 3: matriz de correlaciones
-    corr = df[[Y] + XS].corr()
+    corr = df[[Y] + XS].corr()   # correlaciones de las variables del modelo (logaritmos)
     fig, eje = plt.subplots(figsize=(6.2, 5.2))
     im = eje.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1)
-    eje.set_xticks(range(4), [Y] + XS)
+    eje.set_xticks(range(4), [Y] + XS, rotation=20)
     eje.set_yticks(range(4), [Y] + XS)
     for i in range(4):
         for j in range(4):
@@ -252,7 +315,7 @@ def figuras(df, residuos):
     # Figura 4: comparación de la solidez por país (cajas)
     fig, ejes = plt.subplots(1, 4, figsize=(15, 4.2))
     paises = list(COLORES)
-    for eje, var in zip(ejes, [Y] + XS):
+    for eje, var in zip(ejes, [Y_NIV] + XS_NIV):
         cajas = eje.boxplot([df.loc[df.pais == p, var] for p in paises], tick_labels=paises, patch_artist=True)
         for caja, p in zip(cajas["boxes"], paises):
             caja.set_facecolor(COLORES[p])
@@ -265,13 +328,13 @@ def figuras(df, residuos):
     plt.close(fig)
 
     # Figura 5: caja y bigotes de cada variable (panel completo)
-    fig, ejes = plt.subplots(1, 4, figsize=(13, 4.2))
-    for eje, var in zip(ejes, [Y] + XS):
+    fig, ejes = plt.subplots(2, 4, figsize=(14, 7.5))
+    for eje, var in zip(ejes.flat, [Y_NIV] + XS_NIV + [Y] + XS):
         eje.boxplot(df[var], tick_labels=[var], patch_artist=True, widths=0.5,
                     boxprops=dict(facecolor="#9ecae1"), medianprops=dict(color="black", lw=2))
         eje.set_title(ETIQUETAS[var], fontsize=9, fontweight="bold")
         eje.grid(alpha=0.3, axis="y")
-    fig.suptitle("Figura 5. Diagrama de caja y bigotes de cada variable, 2005–2025", fontweight="bold")
+    fig.suptitle("Figura 5. Caja y bigotes de cada variable: niveles (arriba) y logaritmos (abajo)", fontweight="bold")
     fig.tight_layout(rect=(0, 0, 1, 0.92))
     fig.savefig(SALIDAS / "figura5_caja_bigotes.png", dpi=300)
     plt.close(fig)
@@ -282,13 +345,28 @@ def figuras(df, residuos):
     ejes[0].set_title("Histograma de residuos", fontweight="bold")
     stats.probplot(residuos, dist="norm", plot=ejes[1])
     ejes[1].set_title("Gráfico Q-Q normal de residuos", fontweight="bold")
-    fig.suptitle("Figura 6. Diagnóstico de residuos del modelo de efectos fijos", fontweight="bold")
+    fig.suptitle("Figura 6. Diagnóstico de residuos del modelo log-log de efectos fijos", fontweight="bold")
     fig.tight_layout(rect=(0, 0, 1, 0.92))
     fig.savefig(SALIDAS / "figura6_residuos.png", dpi=300)
     plt.close(fig)
 
 
 # ── 5. Programa principal ─────────────────────────────────────────────────
+def tabla_hipotesis(m):
+    filas = {}
+    for x in m["xs"]:
+        b, p = m["coef"][x], m["p_dk"][x]
+        signo_ok = np.sign(b) == SIGNO_ESPERADO[x]
+        filas[HIPOTESIS[x]] = {
+            "variable": x, "signo_esperado": "+" if SIGNO_ESPERADO[x] > 0 else "-",
+            "coeficiente": round(b, 4), "error_DK": round(m["se_dk"][x], 4), "t": round(m["t_dk"][x], 3),
+            "valor_p": round(p, 6),
+            "decision": ("Se acepta la hipótesis" if (p < ALFA and signo_ok)
+                         else "Signo contrario al esperado" if p < ALFA else "No significativa al 5%"),
+        }
+    return pd.DataFrame(filas).T
+
+
 def main():
     SALIDAS.mkdir(exist_ok=True)
     df = pd.read_csv(ENTRADA)
@@ -298,63 +376,54 @@ def main():
     df["t"] = (df["año"] - df["año"].min()) * 12 + df["num_mes"]
     registrar(f"Inicio · {len(df)} observaciones · {df.pais.nunique()} países · {df.t.nunique()} meses")
 
-    # Tabla 1: estadísticos descriptivos
-    t1 = df[[Y] + XS].describe().T[["count", "mean", "std", "min", "50%", "max"]]
+    # Tabla 1: estadísticos descriptivos (niveles y logaritmos)
+    t1 = df[[Y_NIV] + XS_NIV + [Y] + XS].describe().T[["count", "mean", "std", "min", "50%", "max"]]
     t1.columns = ["n", "media", "desv_est", "minimo", "mediana", "maximo"]
-    guardar_tabla(t1.round(4), "tabla1_descriptivos", "Estadísticos descriptivos del panel (2005-2025)")
+    guardar_tabla(t1.round(4), "tabla1_descriptivos", "Estadísticos descriptivos de las variables (2005-2025)")
 
     # Tabla 2: medias por país (comparación de solidez)
-    t2 = df.groupby("pais")[[Y] + XS].mean().round(4)
+    t2 = df.groupby("pais")[[Y_NIV] + XS_NIV].mean().round(4)
     guardar_tabla(t2, "tabla2_medias_por_pais", "Promedio de los indicadores por país (2005-2025)")
 
-    # Tabla 3: correlaciones de Pearson con valor p
+    # Tabla 3: correlaciones de Pearson con valor p (variables del modelo)
     filas = {}
     for x in XS:
         r, p = stats.pearsonr(df[x], df[Y])
-        filas[x] = {"r_con_MOR": round(r, 4), "valor_p": round(p, 6), "signif_5%": "Sí" if p < ALFA else "No"}
+        filas[x] = {"r_con_Log_MOR": round(r, 4), "valor_p": round(p, 6), "signif_5%": "Sí" if p < ALFA else "No"}
     t3 = pd.DataFrame(filas).T
-    guardar_tabla(t3, "tabla3_correlaciones", "Correlación de Pearson entre la morosidad y cada variable explicativa")
+    guardar_tabla(t3, "tabla3_correlaciones", "Correlación de Pearson entre Log_MOR y cada variable explicativa")
 
-    # Tabla 4: VIF (multicolinealidad; VIF > 10 sería problemático)
+    # Tabla 4: VIF
     t4 = vif(df).round(4)
-    guardar_tabla(t4, "tabla4_vif", "Factor de inflación de varianza (VIF)")
+    guardar_tabla(t4, "tabla4_vif", "Factor de inflación de varianza (VIF) de las variables del modelo")
 
-    # Tabla 5: modelos
-    agrupado = estimar(df, efectos_fijos=False)
-    fe = estimar(df, efectos_fijos=True)
-    t5 = pd.DataFrame({
-        "MCO_agrupado": [f"{agrupado['coef'][x]:.4f}{estrellas(agrupado['p_dk'][x])} ({agrupado['se_dk'][x]:.4f})" for x in XS],
-        "Efectos_fijos": [f"{fe['coef'][x]:.4f}{estrellas(fe['p_dk'][x])} ({fe['se_dk'][x]:.4f})" for x in XS],
-    }, index=XS)
-    t5.loc["R2"] = [f"{agrupado['r2']:.4f}", f"{fe['r2']:.4f} (within)"]
-    t5.loc["Observaciones"] = [agrupado["n"], fe["n"]]
-    t5.loc["Paises"] = [agrupado["N"], fe["N"]]
-    t5.loc["Error estándar"] = ["Driscoll-Kraay", "Driscoll-Kraay"]
-    guardar_tabla(t5, "tabla5_modelos",
-                  "Determinantes de la morosidad bancaria: MCO agrupado y efectos fijos (errores DK entre paréntesis)")
+    # Modelos
+    agrupado = estimar(df, efectos_fijos=False)              # como "regress" de Stata
+    fe = estimar(df, efectos_fijos=True)                     # modelo principal
+    fe_niv = estimar(df, y=Y_NIV, xs=XS_NIV, efectos_fijos=True)
 
-    # Tabla 5b: salida detallada del modelo de regresión (efectos fijos)
-    tcrit = stats.t.ppf(1 - ALFA / 2, fe["T"] - 1)
-    t5b = pd.DataFrame({
-        "coeficiente": fe["coef"], "error_DK": fe["se_dk"], "t": fe["t_dk"], "valor_p": fe["p_dk"],
-        "IC95_inf": fe["coef"] - tcrit * fe["se_dk"], "IC95_sup": fe["coef"] + tcrit * fe["se_dk"],
-    }).round(6)
-    k = len(XS)
-    r2_aj = 1 - (1 - fe["r2"]) * (fe["n"] - fe["N"]) / fe["gl"]
-    F_glob = (fe["r2"] / k) / ((1 - fe["r2"]) / fe["gl"])
-    p_F = stats.f.sf(F_glob, k, fe["gl"])
-    t5b.loc["R2 within"] = [round(fe["r2"], 6)] + [""] * 5
-    t5b.loc["R2 ajustado"] = [round(r2_aj, 6)] + [""] * 5
-    t5b.loc["F global (p)"] = [round(F_glob, 4), "", "", round(p_F, 6), "", ""]
-    t5b.loc["Observaciones"] = [fe["n"]] + [""] * 5
-    guardar_tabla(t5b, "tabla5b_regresion_detallada",
-                  "Resultados del modelo de regresión lineal de panel con efectos fijos")
-    ecuacion = (f"MOR = a_i {fe['coef']['CAPR']:+.4f}·CAPR {fe['coef']['ROA']:+.4f}·ROA "
-                f"{fe['coef']['CRED']:+.4f}·CRED")
+    # Salidas tipo Stata (texto) + tablas
+    txt_mco, tab_mco = salida_regresion(agrupado, "Modelo 1. MCO agrupado log-log:  regress Log_MOR Log_CAPR Log_ROA Log_CRED")
+    txt_fe, tab_fe = salida_regresion(fe, "Modelo 2 (principal). Efectos fijos log-log:  xtreg Log_MOR Log_CAPR Log_ROA Log_CRED, fe", errores="dk")
+    (SALIDAS / "regresion_modelo1_MCO_loglog.txt").write_text(txt_mco, encoding="utf-8")
+    (SALIDAS / "regresion_modelo2_EF_loglog.txt").write_text(txt_fe, encoding="utf-8")
+    guardar_tabla(tab_mco, "tabla5a_regresion_MCO_loglog", "Resultados del modelo de regresión lineal log-log por MCO agrupado")
+    guardar_tabla(tab_fe, "tabla5b_regresion_EF_loglog", "Resultados del modelo de regresión lineal log-log con efectos fijos (errores Driscoll-Kraay)")
+
+    # Tabla 5: comparación de modelos
+    def col(m):
+        return [f"{m['coef'][x]:.4f}{estrellas(m['p_dk'][x])} ({m['se_dk'][x]:.4f})" for x in m["xs"]]
+    t5 = pd.DataFrame({"MCO agrupado (log-log)": col(agrupado), "Efectos fijos (log-log)": col(fe),
+                       "Efectos fijos (niveles)": col(fe_niv)}, index=["X1 CAPR", "X2 ROA", "X3 CRED"])
+    t5.loc["R2"] = [f"{agrupado['r2']:.4f}", f"{fe['r2']:.4f} (within)", f"{fe_niv['r2']:.4f} (within)"]
+    t5.loc["Observaciones"] = [agrupado["n"], fe["n"], fe_niv["n"]]
+    guardar_tabla(t5, "tabla5_comparacion_modelos",
+                  "Comparación de modelos (errores Driscoll-Kraay entre paréntesis; *** p<0,01, ** p<0,05, * p<0,10)")
+    ecuacion = (f"Log_MOR = a_i {fe['coef'][XS[0]]:+.4f}·Log_CAPR {fe['coef'][XS[1]]:+.4f}·Log_ROA "
+                f"{fe['coef'][XS[2]]:+.4f}·Log_CRED")
     (SALIDAS / "ecuacion_estimada.txt").write_text(ecuacion + "\n", encoding="utf-8")
 
-    # Tabla 6: pruebas de diagnóstico sobre el modelo de efectos fijos
-    k = len(XS)
+    # Tabla 6: pruebas de diagnóstico (modelo principal)
     F = ((agrupado["ssr"] - fe["ssr"]) / (fe["N"] - 1)) / (fe["ssr"] / fe["gl"])
     pF = stats.f.sf(F, fe["N"] - 1, fe["gl"])
     bp, pbp = breusch_pagan(df, fe["resid"])
@@ -373,49 +442,51 @@ def main():
             else "Residuos normales",
         ],
     }, index=["F de efectos fijos", "Breusch-Pagan", "Pesaran CD", "rho AR(1)", "Jarque-Bera"]).round(6)
-    guardar_tabla(t6, "tabla6_pruebas", "Pruebas de diagnóstico del modelo de efectos fijos")
+    guardar_tabla(t6, "tabla6_pruebas", "Pruebas de diagnóstico del modelo log-log de efectos fijos")
 
-    # Tabla 7: contraste de hipótesis (efectos fijos, Driscoll-Kraay)
-    filas = {}
-    for x in XS:
-        b, p = fe["coef"][x], fe["p_dk"][x]
-        signo_ok = np.sign(b) == SIGNO_ESPERADO[x]
-        filas[HIPOTESIS[x]] = {
-            "variable": x, "signo_esperado": "+" if SIGNO_ESPERADO[x] > 0 else "-",
-            "coeficiente": round(b, 4), "error_DK": round(fe["se_dk"][x], 4), "t": round(fe["t_dk"][x], 3),
-            "valor_p": round(p, 6),
-            "decision": ("Se acepta la hipótesis" if (p < ALFA and signo_ok)
-                         else "Signo contrario al esperado" if p < ALFA else "No significativa al 5%"),
-        }
-    t7 = pd.DataFrame(filas).T
-    guardar_tabla(t7, "tabla7_hipotesis", "Contraste de hipótesis (efectos fijos, errores Driscoll-Kraay, alfa = 5%)")
-
-    # Tabla 8: robustez
+    # Tabla 7: contraste de hipótesis (modelo principal) y 7b, 7c
     rez = df.copy()
     for x in XS:
         rez[x] = rez.groupby("pais")[x].shift(12)
     rez = rez.dropna(subset=XS)
-    sin_peru = df[df.pais != "Perú"]
-    observ = df[df[[f"origen_{v}" for v in [Y, "CAPR", "ROA"]]].apply(
+    m_rez = estimar(rez)
+    t7 = tabla_hipotesis(fe)
+    guardar_tabla(t7, "tabla7_hipotesis", "Contraste de hipótesis: efectos fijos log-log, errores Driscoll-Kraay, alfa = 5%")
+    t7b = tabla_hipotesis(m_rez)
+    guardar_tabla(t7b, "tabla7b_hipotesis_rezago12", "Contraste de hipótesis con variables explicativas rezagadas 12 meses (log-log)")
+    t7c = tabla_hipotesis(fe_niv)
+    guardar_tabla(t7c, "tabla7c_hipotesis_niveles", "Contraste de hipótesis en el modelo en niveles")
+
+    # Tabla 8: robustez (todas log-log salvo "Niveles")
+    winsor = df.copy()
+    for v in [Y_NIV] + XS_NIV:
+        p1 = winsor.groupby("pais")[v].transform(lambda s: s.quantile(0.01))
+        p99 = winsor.groupby("pais")[v].transform(lambda s: s.quantile(0.99))
+        winsor[v] = winsor[v].clip(p1, p99)
+        winsor[f"Log_{v}"] = np.log10(winsor[v])
+    observ = df[df[[f"origen_{v}" for v in ["MOR", "CAPR", "ROA"]]].apply(
         lambda c: c.str.contains("observado")).all(axis=1)]
-    modelos = {"Base (EF)": fe, "X rezagadas 12 meses": estimar(rez), "Sin Perú": estimar(sin_peru),
+    modelos = {"Base: EF log-log": fe, "Niveles": fe_niv, "X rezagadas 12 meses": m_rez,
+               "Winsorizado 1-99%": estimar(winsor), "Sin Perú": estimar(df[df.pais != "Perú"]),
                "Solo meses observados": estimar(observ)}
-    t8 = pd.DataFrame({nombre: [f"{m['coef'][x]:.4f}{estrellas(m['p_dk'][x])}" for x in XS] + [m["n"]]
-                       for nombre, m in modelos.items()}, index=XS + ["Observaciones"])
-    guardar_tabla(t8, "tabla8_robustez", "Pruebas de robustez del modelo de efectos fijos")
+    t8 = pd.DataFrame({nombre: [f"{m['coef'][x]:.4f}{estrellas(m['p_dk'][x])}" for x in m["xs"]] + [m["n"]]
+                       for nombre, m in modelos.items()}, index=["X1 CAPR", "X2 ROA", "X3 CRED", "Observaciones"])
+    guardar_tabla(t8, "tabla8_robustez", "Pruebas de robustez (efectos fijos, errores Driscoll-Kraay)")
 
     figuras(df, fe["resid"])
-    registrar("Tablas 1-8 y 5b (.csv y .tex), figuras 1-6 (.png, 300 dpi) y ecuación estimada guardadas en salidas/")
+    registrar("Salidas de regresión (.txt), tablas 1-8 (.csv y .tex) y figuras 1-6 (.png, 300 dpi) guardadas en salidas/")
 
-    print("\n=== Modelo de regresión (efectos fijos, errores Driscoll-Kraay) ===")
+    print("\n" + txt_mco)
+    print("\n" + txt_fe)
+    print("\nEcuación estimada (modelo principal):", ecuacion)
+    print("\n=== Comparación de modelos ===")
     print(t5.to_string())
-    print("\n=== Resultados detallados del modelo ===")
-    print(t5b.to_string())
-    print("\nEcuación estimada:", ecuacion)
     print("\n=== Pruebas de diagnóstico ===")
     print(t6.to_string())
-    print("\n=== Contraste de hipótesis ===")
+    print("\n=== Contraste de hipótesis (modelo principal) ===")
     print(t7.to_string())
+    print("\n=== Hipótesis con X rezagadas 12 meses ===")
+    print(t7b.to_string())
     print("\n=== Robustez ===")
     print(t8.to_string())
 

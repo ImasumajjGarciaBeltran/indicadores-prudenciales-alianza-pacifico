@@ -1,4 +1,4 @@
-,r_con_MOR,valor_p,signif_5%
-CAPR,0.3225,0.0,Sí
-ROA,0.2629,0.0,Sí
-CRED,-0.4451,0.0,Sí
+,r_con_Log_MOR,valor_p,signif_5%
+Log_CAPR,0.4091,0.0,Sí
+Log_ROA,0.2582,0.0,Sí
+Log_CRED,-0.4261,0.0,Sí

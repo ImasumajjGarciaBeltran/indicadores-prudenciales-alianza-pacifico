@@ -1,0 +1,4 @@
+,variable,signo_esperado,coeficiente,error_DK,t,valor_p,decision
+H1 riesgo moral,CAPR,-,0.0581,0.0224,2.596,0.009976,Signo contrario al esperado
+H2 mala gestión,ROA,-,-0.3202,0.0648,-4.938,1e-06,Se acepta la hipótesis
+H3 auge crediticio,CRED,+,-0.0028,0.0066,-0.42,0.674493,No significativa al 5%

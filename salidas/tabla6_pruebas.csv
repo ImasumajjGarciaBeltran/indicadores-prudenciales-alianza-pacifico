@@ -1,6 +1,6 @@
 ,estadistico,valor_p,conclusion
-F de efectos fijos,152.670337,0.0,Se prefieren efectos fijos
-Breusch-Pagan,106.582493,0.0,Hay heterocedasticidad
-Pesaran CD,-1.488602,0.136592,Sin dependencia entre países
-rho AR(1),0.977362,,Autocorrelación AR(1) de residuos (Durbin-Watson ≈ 0.045)
-Jarque-Bera,677.059272,0.0,"Residuos no normales (con n grande, la inferencia sigue siendo válida)"
+F de efectos fijos,151.541332,0.0,Se prefieren efectos fijos
+Breusch-Pagan,183.512782,0.0,Hay heterocedasticidad
+Pesaran CD,-2.279129,0.022659,Hay dependencia entre países
+rho AR(1),0.976442,,Autocorrelación AR(1) de residuos (Durbin-Watson ≈ 0.047)
+Jarque-Bera,48.620401,0.0,"Residuos no normales (con n grande, la inferencia sigue siendo válida)"

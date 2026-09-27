@@ -1,14 +1,14 @@
 \begin{table}[htbp]
 \centering
-\caption{Pruebas de robustez del modelo de efectos fijos}
-\begin{tabular}{lllll}
+\caption{Pruebas de robustez (efectos fijos, errores Driscoll-Kraay)}
+\begin{tabular}{lllllll}
 \hline
- & Base (EF) & X rezagadas 12 meses & Sin Perú & Solo meses observados \\
+ & Base: EF log-log & Niveles & X rezagadas 12 meses & Winsorizado 1-99\% & Sin Perú & Solo meses observados \\
 \hline
-CAPR & 0.0581*** & -0.0021 & -0.0054 & 0.0221 \\
-ROA & -0.3202*** & -0.2259*** & -0.0695 & -0.1772*** \\
-CRED & -0.0028 & 0.0122*** & 0.0065 & -0.0049 \\
-Observaciones & 1008 & 960 & 756 & 784 \\
+X1 CAPR & 0.7264*** & 0.0581*** & 0.2529 & 0.7225*** & 0.3318** & 0.3722** \\
+X2 ROA & -0.2168*** & -0.3202*** & -0.1122** & -0.2200*** & -0.1141** & -0.1338*** \\
+X3 CRED & -0.1178 & -0.0028 & 0.1718*** & -0.1153 & 0.0178 & -0.0918 \\
+Observaciones & 1008 & 1008 & 960 & 1008 & 756 & 784 \\
 \hline
 \end{tabular}
 \label{tab:tabla8_robustez}

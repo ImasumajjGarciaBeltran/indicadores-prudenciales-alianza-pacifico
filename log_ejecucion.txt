@@ -24,3 +24,5 @@
 2026-09-27 01:44:42 · 03_limpieza_datos · Fin · 1008 filas × 17 columnas (incluye columnas Log_) · SHA-256 cf071587222c83647e56c0d37055bb00526edd4d026677ae123fa0984400e6b3
 2026-09-27 01:44:43 · 03_limpieza_datos · diccionario_variables.xlsx actualizado
 2026-09-27 01:44:44 · 03_limpieza_datos · README.md: hash SHA-256 actualizado
+2026-09-27 01:50:07 · 04_analisis · Inicio · 1008 observaciones · 4 países · 252 meses
+2026-09-27 01:50:25 · 04_analisis · Salidas de regresión (.txt), tablas 1-8 (.csv y .tex) y figuras 1-6 (.png, 300 dpi) guardadas en salidas/
