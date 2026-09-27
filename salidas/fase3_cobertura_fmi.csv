@@ -1,0 +1,157 @@
+INDICATOR,descripcion,SECTOR,FREQUENCY,COUNTRY,desde,hasta,n_datos
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,A,CHL,2001,2025,25
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,A,COL,2005,2025,21
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,A,MEX,2005,2025,21
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,A,PER,2010,2024,15
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,M,CHL,2008-01,2025-12,216
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,M,COL,2005-01,2026-03,255
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,M,MEX,2005-01,2026-03,255
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,Q,COL,2005Q1,2026Q1,85
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+AQ12_CFSI_PT,"Nonperforming loans to total gross loans, (Core FSI), Percent",S12CFSI,Q,PER,2010Q4,2025Q3,60
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,A,COL,2005,2025,21
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,A,PER,2010,2024,15
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,M,CHL,2008-01,2025-12,216
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+AQ12_NPF4_XDC,"Nonperforming loans to total gross loans, Nonperforming loans, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,CHL,2022,2025,4
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,MEX,2013,2025,13
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,PER,2024,2024,1
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,CHL,2022-01,2025-12,48
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,MEX,2013-01,2026-03,159
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,CHL,2022Q1,2025Q4,16
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,MEX,2013Q1,2026Q1,53
+FSI15_CFSI_PT,"Common equity Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,PER,2024Q1,2025Q3,7
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,A,CHL,2022,2025,4
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,A,MEX,2013,2025,13
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,A,PER,2024,2024,1
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,M,CHL,2022-01,2025-12,48
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,M,MEX,2013-01,2026-03,159
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,Q,CHL,2022Q1,2025Q4,16
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,Q,MEX,2013Q1,2026Q1,53
+FSI15_FSI46A_XDC,"Common equity Tier 1 capital to risk-weighted assets, Common equity Tier 1 capital, Domestic currency",S12CFSI,Q,PER,2024Q1,2025Q3,7
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,CHL,2022,2025,4
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,MEX,2013,2025,13
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,PER,2024,2024,1
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,CHL,2022-01,2025-12,48
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,MEX,2013-01,2026-03,159
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,CHL,2022Q1,2025Q4,16
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,MEX,2013Q1,2026Q1,53
+FSI15_RWA_XDC,"Common equity Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,PER,2024Q1,2025Q3,7
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,A,COL,2005,2025,21
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,A,PER,2010,2024,15
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,M,CHL,2008-01,2025-12,216
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI303_TGF4_XDC,"Nonperforming loans to total gross loans, Total gross loans, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,CHL,2001,2025,25
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,COL,2005,2025,21
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,MEX,2005,2025,21
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,PER,2010,2024,15
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,COL,2005-01,2026-03,255
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI626_CFSI_PT,"Tier 1 capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,COL,2005,2025,21
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,PER,2010,2024,15
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI626_RWA_XDC,"Tier 1 capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,A,COL,2005,2025,21
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,A,PER,2010,2024,15
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI626_T1K_XDC,"Tier 1 capital to risk-weighted assets, Tier 1 capital, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,CHL,2001,2025,25
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,COL,2005,2025,21
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,MEX,2005,2025,21
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,A,PER,2010,2024,15
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,COL,2005-01,2026-03,255
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI688_CFSI_PT,"Regulatory capital to risk-weighted assets, (Core FSI), Percent",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,COL,2005,2025,21
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,A,PER,2010,2024,15
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI688_RWA_XDC,"Regulatory capital to risk-weighted assets, Risk-weighted assets, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,A,COL,2005,2025,21
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,A,PER,2010,2024,15
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,M,CHL,2001-01,2025-12,300
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,M,MEX,2005-01,2026-03,255
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+FSI688_TREGK_XDC,"Regulatory capital to risk-weighted assets, Total regulatory capital, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,A,COL,2005,2025,21
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,A,PER,2010,2024,15
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,M,CHL,2001-12,2025-12,289
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,M,MEX,2005-12,2026-03,244
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+ROA_ATA_XDC,"Return on assets, Average total assets, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,A,CHL,2001,2025,25
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,A,COL,2005,2025,21
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,A,MEX,2005,2025,21
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,A,PER,2010,2024,15
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,M,CHL,2001-12,2025-12,289
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,M,COL,2005-01,2026-03,255
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,M,MEX,2005-12,2026-03,244
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,Q,COL,2005Q1,2026Q1,85
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+ROA_CFSI_PT,"Return on assets, (Core FSI), Percent",S12CFSI,Q,PER,2010Q4,2025Q3,60
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,A,CHL,2001,2025,25
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,A,COL,2005,2025,21
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,A,MEX,2005,2025,21
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,A,PER,2010,2024,15
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,M,CHL,2001-12,2025-12,289
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,M,COL,2005-01,2026-03,255
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,M,MEX,2005-12,2026-03,244
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,Q,CHL,2001Q1,2025Q4,100
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,Q,COL,2005Q1,2026Q1,85
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,Q,MEX,2005Q1,2026Q1,85
+ROA_NINCBTX_XDC,"Return on assets, Net income before taxes, Domestic currency",S12CFSI,Q,PER,2010Q4,2025Q3,60

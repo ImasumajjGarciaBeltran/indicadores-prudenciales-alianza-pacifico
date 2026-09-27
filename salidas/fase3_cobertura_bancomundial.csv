@@ -1,0 +1,13 @@
+indicador,descripcion,pais,desde,hasta,n_datos,huecos
+FB.AST.NPER.ZS,Bank nonperforming loans to total gross loans (%),CHL,2001,2025,25,0
+FB.AST.NPER.ZS,Bank nonperforming loans to total gross loans (%),COL,2005,2025,21,0
+FB.AST.NPER.ZS,Bank nonperforming loans to total gross loans (%),MEX,2005,2025,21,0
+FB.AST.NPER.ZS,Bank nonperforming loans to total gross loans (%),PER,2010,2024,15,0
+FS.AST.PRVT.GD.ZS,Domestic credit to private sector (% of GDP),CHL,2001,2025,25,0
+FS.AST.PRVT.GD.ZS,Domestic credit to private sector (% of GDP),COL,2000,2025,26,0
+FS.AST.PRVT.GD.ZS,Domestic credit to private sector (% of GDP),MEX,2000,2025,26,0
+FS.AST.PRVT.GD.ZS,Domestic credit to private sector (% of GDP),PER,2000,2024,25,0
+GFDD.SI.02,Bank non-performing loans to gross loans (%),CHL,2000,2020,21,0
+GFDD.SI.02,Bank non-performing loans to gross loans (%),COL,2000,2020,21,0
+GFDD.SI.02,Bank non-performing loans to gross loans (%),MEX,2000,2020,21,0
+GFDD.SI.02,Bank non-performing loans to gross loans (%),PER,2001,2020,20,0
