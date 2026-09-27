@@ -25,7 +25,11 @@ Reglas de limpieza (en este orden):
   4. Imputación por media para los meses de los extremos sin dato a ambos lados:
      media de los datos observados del mismo país y año.
      CRED de Perú 2025 (el Banco Mundial aún no lo publica): media de los últimos 3 años.
-  5. Unión por la llave país + fecha, detección de atípicos (solo se reportan) y hash.
+  5. Unión por la llave país + año + mes.
+  6. Atípicos: regla de Tukey (Q1 - 1,5·RIC; Q3 + 1,5·RIC) dentro de cada país; se marcan en la
+     columna "atipico" (1 = sí) y se conservan; su efecto se evalúa con modelos log-log y winsorizado.
+  7. Transformación logarítmica: Log_MOR, Log_CAPR, Log_ROA y Log_CRED (log base 10).
+  8. Diccionario de variables y hash SHA-256.
 """
 
 import hashlib
@@ -188,23 +192,35 @@ def main():
     panel.insert(0, "id", range(1, len(panel) + 1))
     for var in ["MOR", "CAPR", "ROA", "CRED"]:
         panel[var] = panel[var].round(6)
+        # Transformación logarítmica (base 10) al lado de cada variable: Log_MOR, Log_CAPR, ...
+        # Reduce el peso de los valores atípicos y permite leer los coeficientes como elasticidades.
+        if (panel[var] <= 0).any():
+            raise ValueError(f"{var} tiene valores <= 0: no se puede aplicar logaritmo")
+        panel.insert(panel.columns.get_loc(var) + 1, f"Log_{var}", np.log10(panel[var]).round(6))
 
     # Controles de calidad
     assert len(panel) == len(MESES) * len(PAISES), "El panel no tiene el número de filas esperado"
     assert not panel[["MOR", "CAPR", "ROA", "CRED"]].isna().any().any(), "Quedan valores vacíos"
     assert not panel.duplicated(["pais", "año", "mes"]).any(), "Hay filas duplicadas país-año-mes"
 
-    # Atípicos (regla de Tukey: fuera de Q1-1.5·RIC y Q3+1.5·RIC): se reportan, no se borran
+    # Tratamiento de atípicos (regla de Tukey DENTRO de cada país): se identifican y se marcan
+    # en la columna "atipico"; NO se eliminan ni se modifican porque corresponden a episodios
+    # económicos reales. Su influencia se evalúa en 04_analisis.py (modelo log-log y winsorizado).
     filas = []
+    marca = pd.Series(0, index=panel.index)
     for var in ["MOR", "CAPR", "ROA", "CRED"]:
-        q1, q3 = panel[var].quantile([0.25, 0.75])
-        ric = q3 - q1
-        atip = panel[(panel[var] < q1 - 1.5 * ric) | (panel[var] > q3 + 1.5 * ric)]
-        filas.append({"variable": var, "limite_inf": round(q1 - 1.5 * ric, 4),
-                      "limite_sup": round(q3 + 1.5 * ric, 4), "n_atipicos": len(atip),
-                      "paises": ", ".join(sorted(atip.pais.unique()))})
+        for pais, g in panel.groupby("pais"):
+            q1, q3 = g[var].quantile([0.25, 0.75])
+            ric = q3 - q1
+            inf, sup = q1 - 1.5 * ric, q3 + 1.5 * ric
+            fuera = g[(g[var] < inf) | (g[var] > sup)]
+            marca[fuera.index] = 1
+            filas.append({"variable": var, "pais": pais, "limite_inf": round(inf, 4),
+                          "limite_sup": round(sup, 4), "n_atipicos": len(fuera)})
+    panel["atipico"] = marca.astype(int)
     atipicos = pd.DataFrame(filas)
     atipicos.to_csv("salidas/tabla_atipicos.csv", index=False, encoding="utf-8")
+    registrar(f"Atípicos identificados dentro de cada país: {int(panel['atipico'].sum())} filas marcadas (no se eliminan)")
 
     # Origen de los datos: cuántos meses son observados, interpolados o imputados
     origen = pd.concat([panel[f"origen_{v}"].value_counts().rename(v) for v in ["MOR", "CAPR", "ROA", "CRED"]],
@@ -214,14 +230,14 @@ def main():
     SALIDA.parent.mkdir(exist_ok=True)
     panel.to_csv(SALIDA, index=False, encoding="utf-8")
     huella = hashlib.sha256(SALIDA.read_bytes()).hexdigest()
-    registrar(f"Fin · {len(panel)} filas × {panel.shape[1]} columnas · SHA-256 {huella}")
+    registrar(f"Fin · {len(panel)} filas × {panel.shape[1]} columnas (incluye columnas Log_) · SHA-256 {huella}")
 
     crear_diccionario()
     actualizar_readme(huella, len(panel))
 
     print("\nOrigen de cada dato (meses):")
     print(origen.to_string())
-    print("\nAtípicos (solo se reportan):")
+    print("\nAtípicos por país (se marcan en la columna 'atipico', no se eliminan):")
     print(atipicos.to_string(index=False))
     print("\nFactores de empalme de Perú:")
     print(empalme.to_string())
@@ -247,10 +263,15 @@ def crear_diccionario():
          fmi + "PER+CHL+COL+MEX.S12CFSI.ROA_CFSI_PT.M+Q+A"),
         ("CRED", "X3 · Crédito interno al sector privado", "% del PBI", "anual, mensualizado",
          "Banco Mundial WDI FS.AST.PRVT.GD.ZS", bm + "FS.AST.PRVT.GD.ZS?format=json&source=2"),
+        ("Log_MOR / Log_CAPR / Log_ROA / Log_CRED",
+         "Logaritmo en base 10 de cada variable; en el modelo log-log los coeficientes son elasticidades",
+         "log10(%)", "mensual", "03_limpieza_datos.py", "—"),
         ("origen_MOR / origen_CAPR / origen_ROA / origen_CRED",
          "Cómo se obtuvo cada dato: FMI_mensual_observado, FMI_trimestral_observado, "
          "BM_GFDD_anual_empalmado, BM_WDI_anual_observado, interpolado_lineal o imputado_media",
          "texto", "mensual", "03_limpieza_datos.py", "—"),
+        ("atipico", "1 si alguna variable de la fila es atípica dentro de su país (regla de Tukey); 0 si no",
+         "0/1", "mensual", "03_limpieza_datos.py", "—"),
     ]
     dic = pd.DataFrame(filas, columns=["variable", "definicion", "unidad", "frecuencia",
                                        "fuente", "endpoint"])

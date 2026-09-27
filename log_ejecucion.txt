@@ -17,3 +17,10 @@
 2026-09-27 00:43:30 · 03_limpieza_datos · README.md: hash SHA-256 actualizado
 2026-09-27 01:08:02 · 04_analisis · Inicio · 1008 observaciones · 4 países · 252 meses
 2026-09-27 01:08:12 · 04_analisis · Tablas 1-8 y 5b (.csv y .tex), figuras 1-6 (.png, 300 dpi) y ecuación estimada guardadas en salidas/
+2026-09-27 01:44:40 · 03_limpieza_datos · Inicio · entrada datos_crudos/datos_crudos_2024200500F.csv
+2026-09-27 01:44:41 · 03_limpieza_datos · Factores de empalme Perú (FMI/GFDD): MOR=0.7733, CAPR=1.0000, ROA=1.3184
+2026-09-27 01:44:41 · 03_limpieza_datos · CRED PER 2025: imputado con la media de 3 años (2022-2024) = 42.7389
+2026-09-27 01:44:42 · 03_limpieza_datos · Atípicos identificados dentro de cada país: 105 filas marcadas (no se eliminan)
+2026-09-27 01:44:42 · 03_limpieza_datos · Fin · 1008 filas × 17 columnas (incluye columnas Log_) · SHA-256 cf071587222c83647e56c0d37055bb00526edd4d026677ae123fa0984400e6b3
+2026-09-27 01:44:43 · 03_limpieza_datos · diccionario_variables.xlsx actualizado
+2026-09-27 01:44:44 · 03_limpieza_datos · README.md: hash SHA-256 actualizado
